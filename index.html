@@ -53,6 +53,10 @@
       background: var(--bark); display: flex; align-items: center; justify-content: center;
       font-family: 'Playfair Display', serif; font-size: 2.2rem; color: var(--cream);
       margin: 0 auto 2rem; border: 3px solid var(--sand);
+      overflow: hidden;
+    }
+    .avatar img {
+      width: 100%; height: 100%; object-fit: cover; border-radius: 50%;
     }
     .hero-inner h1 { font-family: 'Playfair Display', serif; font-size: 2.9rem; font-weight: 400; color: var(--espresso); line-height: 1.15; margin-bottom: 0.4rem; }
     .hero-inner .subtitle { font-size: 0.88rem; color: var(--bark); letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 1.8rem; font-weight: 400; }
@@ -128,7 +132,7 @@
 <section id="home" class="active">
   <div class="hero">
     <div class="hero-inner">
-      <div class="avatar">MC</div>
+      <div class="avatar"><img src="profile.jpg" alt="Melina Conhagen" onerror="this.parentElement.innerHTML='MC'"></div>
       <h1>Melina Conhagen</h1>
       <p class="subtitle">Marketing &amp; Political Science &nbsp;·&nbsp; Tulane University</p>
       <p class="bio">
